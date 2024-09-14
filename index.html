@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+  body{
+      background-color: black;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;      
+      display:flex;
+      background-color:;
+      text-align:center;
+      justify-content:center;
+      
+    }
+    .main_sec{
+      background-color:white;
+      width:80%;
+      max-height:100%;
+      min-height:30rem;
+      margin:0 auto;
+      margin-top: 5rem;
+      border-radius:17px;
+      padding:1rem;
+      position:relative;
+      
+     /* background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhQS_WLyrnBGLrY2A67zbnlneCxpP4MEh50w&usqp=CAU");*/
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:center center;
+      animation:opacity 3s;
+      transition:3s;
+      overflow:hidden;
+    }
+    @keyframes opacity {
+      to{
+        opacity:1;
+      }
+      from{
+        opacity:0;
+      }
+    }
+    
+           /*header*/
+           
+           .main_nav{
+             margin-top:0px;
+             padding:0rem;
+             position:relative;
+             background-color:black;
+             border-radius:5px;
+             width:5rem;
+             
+           }
+           
+           input::placeholder{
+            
+             background-color:black;
+             color:white;
+           }  
+          .input_form{
+             padding:5px;
+             background-color:black;
+             border-radius:5px;
+             color:white;
+             padding-left: 1.7rem;
+             outline:none;
+             border:none;
+             width:8.7rem;
+             position:relative ;
+             transition: width 0.5s ease;
+          }
+          .input_form:focus {
+             max-width: 9rem;
+          }
+           
+
+           .magnify_logo>svg{
+             position:absolute;
+             color:white;
+             left:5px;
+             top:2px;
+             z-index:1;
+             
+           }
+            @media screen and (max-width:200px){
+             .magnify_logo>svg{
+               left:4.4rem;
+             }
+           }
+           /*centet point*/
+      .center_box{
+        display:flex;
+        background-color:;
+        text-align:center;
+        flex-direction:column;
+        background-color:;
+        gap:0.5rem;
+      }
+    
+     
+      .Date_info{
+        margin-top:-20px;
+      }
+      
+      .cloud_info_btn{
+            padding: 1px 21px;
+            background-color: black;
+            color: white;
+            margin:0 auto;
+            font-size: 2rem;
+            border-radius: 10px;
+            border: none;
+            transition: 0.5s;
+            background-color: black;
+            margin-top:-0.7rem;
+            z-index:1;
+      }
+      .cloud_info_btn:hover{
+        background-color:#f6f6f658;
+        color:black;
+        transform:scale(1);
+        box-shadow:2px 2px 2px;
+      
+      }
+      .cloud_icon{
+        width:8rem;
+        margin-top:-1rem;
+        margin-bottom:-1rem;
+        transition:1s;
+        background-color:;
+        animation:cloud 1s ease-in-out alternate infinite;
+      }
+      .cloud_icon:hover{
+         filter: drop-shadow(5px 5px 5px gray);
+      }
+      
+      @keyframes cloud {
+          0%{
+              transform: translateY(-6px);
+          }100%{
+              transform: translateY(6px);
+          }
+      }
+      .img_logo_pt>svg{
+        width:4rem;
+        height:6rem;
+     }
+
+    min{
+      margin-right:4px;
+      font-weight:900;
+    }
+    max{
+      margin-left:4px;
+      font-weight:900;
+    }
+    
+      .num_wdr{
+        font-size:30px;
+      }
+      .footer_box{
+        background-color:;
+        width:80%;
+        margin:0 auto;
+        padding:1rem;
+        display:flex;
+        border-radius:12px;
+        gap:10px;
+        flex-wrap:wrap;
+        position:relative;
+        overflow:hiddn;
+      }
+      .box_ftr{
+        background-color:#fffff;
+        display:flex;
+        align-items:center;
+        gap:13px;
+        border-radius:5px;
+        backdrop-filter:blur(10px);
+        box-shadow:2px 2px 16px 7px lightgray;
+        width:49%;
+        transition: transform 0.5s, box-shadow 0.5s;
+      }
+      .box_ftr:hover {
+       transform: translateY(-5px);
+       color:aquamarine;
+       box-shadow: 1px 1px 12px 3px gray;
+     }
+     
+      @media screen and (max-width:600px){
+        .box_ftr{
+          width:100%;
+        }
+        .main_nav{
+          text-align: center;
+        }
+      }
+      
+      .prg{
+      margin-bottom:;
+      font-weight:500;
+      }
+      .ftr_prg{
+        font-weight:bold;
+      margin-bottom:-15px;
+      }
+      .wdr_icon{
+    margin-left: 5px;
+      }
+      #drop{
+        width:30px;
+      }
+
+      
+    </style>
+</head>
+<body>
+    <section class="main_sec">
+      <!--seàrch baar -->
+      <nav class="main_nav">
+        <div class="magnify_logo">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" viewBox="0 0 50 50" fill="white">
+<path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+</svg>
+        </div>
+        <form class="form">
+        <input class="input_form" type="text" placeholder="City Search.....">
+        </form>
+      </nav>
+      <!--Center point-->
+      
+      <div class="center_box">
+        <div class="title_head">
+        <h1 class="weather_city">City, Country</h1>
+        <p class="Date_info">Day Month Year Time Second</p>
+        </div>
+        <div class="cloud_info_btn">...</div>
+        <div class="img_logo_pt">
+        <svg class="cloud_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 4V3a1 1 0 0 1 2 0v1a1 1 0 0 1-2 0zM5.636 7.05A1 1 0 0 0 7.05 5.636l-.707-.707a1 1 0 0 0-1.414 1.414zM19 12a1 1 0 0 0 1 1h1a1 1 0 0 0 0-2h-1a1 1 0 0 0-1 1zm-.636-4.95.707-.707a1 1 0 1 0-1.414-1.414l-.707.707a1 1 0 0 0 1.414 1.414zM22 18a4 4 0 0 1-4 4H8.729A6.729 6.729 0 0 1 2 15.271a6.254 6.254 0 0 1 4.741-6.128A5.989 5.989 0 0 1 18 12a5.864 5.864 0 0 1-.109 1.09A4.993 4.993 0 0 1 22 18zm-6-6a3.982 3.982 0 0 0-6.778-2.853 5.971 5.971 0 0 1 4.542 4.3 5.823 5.823 0 0 1 2.1-.449A3.824 3.824 0 0 0 16 12z"/></svg>
+        </div>
+        <div class="num_wdr"></div>
+        <!-- temperature-->
+        
+        <div class="tem_data">
+          <span class="min">Min 00°</span>
+         <span class="max">Max 00°</span>
+        </div>
+        
+      </div>
+      <!-- Foooter Grid box bottom-->
+      
+      <div class="footer_box" >
+        <!---box footer 1-->
+        <div class="box_ftr">
+          <div class="wdr_icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2" width="3rem"><path d="M37 23v17.263c0 .751.328 1.465.896 1.956A8.923 8.923 0 0 1 41 49c0 4.967-4.033 9-9 9s-9-4.033-9-9a8.979 8.979 0 0 1 3.095-6.79c.566-.489.892-1.2.892-1.947C27 35.632 27 19.34 27 11c0-1.326.527-2.598 1.464-3.536A5.004 5.004 0 0 1 32 6h0a5 5 0 0 1 5 5v8" style="fill:none;stroke:#222a33;stroke-width:1.5px"/><path d="M37 49.5c0 2.76-2.24 5-5 5s-5-2.24-5-5c0-1.574.729-2.979 1.867-3.896a3.036 3.036 0 0 0 1.114-2.353C30 40.032 30 30.967 30 27.5a2 2 0 1 1 4 0v15.751c0 .917.412 1.786 1.121 2.367M33.5 23H37M33.5 19H37M33.5 15H37" style="fill:none;stroke:#222a33;stroke-width:1.5px"/><circle cx="45" cy="29" r="2" style="fill:none;stroke:#222a33;stroke-width:1.5px"/><circle cx="17" cy="14" r="3" style="fill:none;stroke:#222a33;stroke-width:1.5px"/><path d="M19 47.063A9.005 9.005 0 0 1 14 39c0-4.967 4.033-9 9-9 1.436 0 2.795.337 4 .937M23 27v-3M14.515 47.485l-2.122 2.122M8 39h3M12.393 28.393l2.122 2.122" style="fill:none;stroke:#222a33;stroke-width:1.5px"/></svg>
+          </div>
+          
+          <div class="ftr_text">
+            <p class="ftr_prg">Feels Like</p>
+            <p class="feels_like">Loading..</p>
+          </div>
+        </div>
+        
+                <!---box footer 2-->
+        <div class="box_ftr">
+          
+         <div class="wdr_icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="drop"><path d="M10.203.561c-.027-.215-.38-.215-.406 0-.883 7.107-5.398 8.572-5.398 13.512 0 3.053 2.564 5.527 5.601 5.527 3.036 0 5.6-2.475 5.6-5.527 0-4.94-4.514-6.405-5.397-13.512zM9.35 8.418c-.059.219-.123.444-.189.678-.401 1.424-.856 3.039-.856 4.906 0 1.012-.598 1.371-1.156 1.371a1.161 1.161 0 0 1-1.156-1.166c0-2.207 1.062-3.649 2-4.92.295-.398.572-.775.797-1.15.103-.172.38-.164.506.006.059.08.079.182.054.275z"></path></svg>
+         </div>
+           
+          <div class="ftr_text">
+            <p class="ftr_prg">Humidity</p>
+            <p class="humidity">Loading..</p>
+          </div>
+        </div>
+        
+                <!---box footer 3-->
+        <div class="box_ftr">
+                    <div class="wdr_icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2" width="2rem"><path d="M17 29.307h18M39.5 29.307h10.848A5.652 5.652 0 0 0 56 23.655v-.003A5.651 5.651 0 0 0 50.348 18h-4.372M17 34.693h8M33.446 34.693h16.902A5.651 5.651 0 0 1 56 40.345v.003A5.651 5.651 0 0 1 50.348 46h-4.372M8 17.921h22.726a2.719 2.719 0 0 0 2.72-2.72V15.2a2.719 2.719 0 0 0-2.72-2.72h-2.291M8 46.079h22.726a2.719 2.719 0 0 1 2.72 2.72v.001a2.719 2.719 0 0 1-2.72 2.72h-2.291" style="fill:none;stroke:#222a33;stroke-width:1.5px"/></svg>
+          </div>
+          <div class="ftr_text">
+            <p class="ftr_prg">Wind</p>
+            <p class="wind">Loading..</p>
+          </div>
+        </div>    
+                <!---box footer 4-->
+        <div class="box_ftr">
+          <div class="wdr_icon">
+            <svg width="30" height="30" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle -->
+  <circle cx="100" cy="100" r="90" stroke="black" stroke-width="4" fill="none"/>
+  <!-- Center circle -->
+  <circle cx="100" cy="100" r="5" fill="black"/>
+  
+  <!-- Tick marks -->
+  <line x1="100" y1="10" x2="100" y2="30" stroke="black" stroke-width="2"/>
+  <line x1="100" y1="190" x2="100" y2="170" stroke="black" stroke-width="2"/>
+  <line x1="10" y1="100" x2="30" y2="100" stroke="black" stroke-width="2"/>
+  <line x1="190" y1="100" x2="170" y2="100" stroke="black" stroke-width="2"/>
+  <line x1="45" y1="45" x2="60" y2="60" stroke="black" stroke-width="2"/>
+  <line x1="155" y1="155" x2="140" y2="140" stroke="black" stroke-width="2"/>
+  <line x1="45" y1="155" x2="60" y2="140" stroke="black" stroke-width="2"/>
+  <line x1="155" y1="45" x2="140" y2="60" stroke="black" stroke-width="2"/>
+
+  <!-- Pointer -->
+  <line x1="100" y1="100" x2="100" y2="50" stroke="red" stroke-width="3"/>
+
+  <!-- Labels for weather pressure -->
+  <text x="100" y="25" text-anchor="middle" font-size="12" fill="black">High</text>
+  <text x="100" y="180" text-anchor="middle" font-size="12" fill="black">Low</text>
+  <text x="25" y="105" text-anchor="middle" font-size="12" fill="black">Rising</text>
+  <text x="175" y="105" text-anchor="middle" font-size="12" fill="black">Falling</text>
+</svg>
+          </div>
+          <div class="ftr_text">
+            <p class="ftr_prg">Pressure</p>
+            <p class="pressure">Loading..</p>
+          </div>
+        </div>
+        
+      </div>
+      
+    
+    </section>
+    
+    
+    
+    
+    <script>
+      const main_sec=document.querySelector(".main_sec")
+const cityName = document.querySelector(".weather_city")
+const date_info= document.querySelector(".Date_info")
+const cloudBtn=document.querySelector(".cloud_info_btn")
+const logoIcon =document.querySelector(".img_logo_pt")
+const w_temp=document.querySelector(".num_wdr")
+const minTem=document.querySelector(".min")
+const maxTem=document.querySelector(".max")
+
+let feelsLike=document.querySelector(".feels_like")
+let humidity=document.querySelector(".humidity")
+let wind=document.querySelector(".wind")
+let presure=document.querySelector(".pressure")
+let submit_form=document.querySelector(".form")
+let input =document.querySelector(".input_form")
+
+
+let maosum=(data)=>{
+//console.log(data)
+    if(data=="Clouds"){
+        main_sec.style.cssText="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhQS_WLyrnBGLrY2A67zbnlneCxpP4MEh50w&usqp=CAU');"
+    }else if(data=="Rain"){
+              main_sec.style.cssText="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOssBVhe4MP7tKYMOuLGlxzpJznIlpCGXemQ&usqp=CAU');"
+    }else if(data=="Mist"){
+            main_sec.style.cssText="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSObK0DvXzmu38wlxfNOysSLFFgx92y7Xu-0w&usqp=CAU');"
+    }else if(data=="Haze"){
+              main_sec.style.cssText="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv5NlzpWqKWe9_83bOQAKHI-l2NhGy9LYSqPaDE3zblyUReDWx7m9Jz98&s=10');"
+    }else if(data=="Clear"){
+              main_sec.style.cssText="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIZgrXjRucXJvugo5Z9c_JvXJIV5W4_F3y7Q&usqp=CAU');"
+    }else{
+            main_sec.style.backgroundColor="white"
+    }
+}
+
+// by given me Default Val
+cityName.innerText="City, Country"
+let city="mau";
+
+//ye search baar ke liye program kiya hpi
+submit_form.addEventListener("submit",(e)=>{
+ e.preventDefault()
+ city=input.value;
+ input.value=""
+ //console.log(city)
+ apiData();
+})
+
+// aur te country code ko exact country name me convert karta hai
+let cntry=(code)=>{
+  return new Intl.DisplayNames(['en'],{type: "region"}).of(code);
+}
+// ye Date & Time ke liye banaya gaya function hai
+const dateApi=(dt)=>{
+currDate =  new Date(dt*1000)
+//console.log(currDate)
+const options ={
+  weakday:"long",
+  year:"numeric",
+  month:"long",
+  day:"numeric",
+  hour:"numeric",
+  minute:"numeric",
+  second:"numeric",
+}
+const formatter= new Intl.DateTimeFormat("en-US",options)
+//console.log(formatter.format(currDate))
+return formatter.format(currDate)
+}
+
+
+
+// ye api Data ko coll karne wala async callback function hai
+const apiData= async()=>{
+ // and ye api Url hai
+  const weatherUrl= `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=a0b06669a793506ae54060f7df8a5fb6`;
+  
+  try{
+    let res = await fetch(weatherUrl,)
+    let data= await res.json()
+     //console.log(data)
+    const { main,name,weather,sys,dt } =data;
+    
+    // console.log(dt)
+    
+    cityName.innerText=`${data.name},${cntry(sys.country)}`;
+    date_info.innerText=dateApi(dt)
+    
+    cloudBtn.innerHTML=`${data.weather[0].main}`
+    maosum(weather[0].main)
+    
+    logoIcon.innerHTML=`<img class="cloud_icon" src="http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png"/>`
+    
+    const kelvin=273.15;// this is convert kelvin to celsius value 273.15
+    
+    const temp = main.temp-kelvin
+    w_temp.innerHTML=`${temp.toFixed()}&#176C`
+    
+    const tempMin = data.main.temp_min-kelvin;
+    minTem.innerHTML=`Min-${tempMin.toFixed()}&#176`;
+    
+    const tempMax = data.main.temp_max-kelvin
+    maxTem.innerHTML=`Max-${tempMax.toFixed(2)}&#176`;
+    
+    const tempFeels = data.main.feels_like-kelvin;
+    feelsLike.innerHTML=`${tempFeels.toFixed()}&#176`;
+     
+    humidity.innerHTML=`${data.main.humidity}%`;
+     
+    wind.innerHTML=`${data.wind.speed} m/s`;
+    presure.innerHTML=`${data.main.pressure} hPa`;   
+  }
+  catch(err){
+//console.log("This is",err)
+//alert(err)
+w_temp.innerHTML=`${err}`
+  }
+}
+
+window.addEventListener("load", apiData);
+
+
+    </script>
+</body>
+</html>
+
